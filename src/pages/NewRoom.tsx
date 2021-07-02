@@ -17,18 +17,15 @@ export function NewRoom() {
             <main>
                <div className="main-content">
                    <img src={logoImg} alt="Letmeask" />
-                   <button className="create-room">
-                       <img src={googleIconImg} alt="Logo da Google" />
-                       Crie sua sala com Google
-                   </button>
-                   <div className="separator">ou entre em uma sala</div>
+                   
+                   <div className="separator">Criar uma nova sala</div>
                    <form>
                        <input 
                        type="text"
                        placeholder="Digite o código da sala"
                        />
                        <Button type="submit" >
-                         Entrar na sala
+                         Criar sala
                        </Button>
                    </form>
                 </div> 
