@@ -1,20 +1,22 @@
-
 import { BrowserRouter, Route } from 'react-router-dom'
 import { Home } from './pages/Home';
 import { NewRoom } from './pages/NewRoom';
+import { AuthContextProvider } from './contexts/AuthContext';
 
 
 
 
- function App() {
- 
 
+
+
+function App() {
+   
   return (
    <BrowserRouter>
-   <TestContext.Provider value={{ value, setValue }}>
+   <AuthContextProvider>
    <Route path="/" exact component={Home} />
    <Route path="/rooms/new" component={NewRoom} />
-   </TestContext.Provider>
+   </AuthContextProvider>
    </BrowserRouter>
   );
 }
